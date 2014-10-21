@@ -1,0 +1,24 @@
+---
+layout: default
+section: post
+---
+
+<section id="home">
+    <p class="photo">
+        {% if page.image %}
+        <img src="/dist/img/{{page.image}}" width="500" height="500" alt="" />
+        {% else %}
+        <img src="/dist/img/about.jpg" width="500" height="500" alt="" />
+        {% endif %}
+    </p>
+
+    <article class="post">
+        <p class="post-date">{{ page.date | date: "%A, %B %-d, %Y" }}</p>
+
+        <h2 class="post-title">
+            <a href="{{ post.url }}">{{ page.title }}</a>
+        </h2>
+
+        {{ content }}
+    </article>
+</section>

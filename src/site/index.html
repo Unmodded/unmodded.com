@@ -1,0 +1,41 @@
+---
+layout: default
+title: Unmodded
+section: home
+---
+
+<section id="home">
+    <p class="photo"><img src="/dist/img/about.jpg" width="500" height="500" alt="" /></p>
+
+{% for post in site.posts %}
+<article class="post">
+    <p class="lead">Unmodded is a small, independent game studio in Seattle, Washington.</p>
+    <hr />
+
+    <div id="projects">
+        <div class="project">
+            <a href="{{ site.blog }}">
+            <img src="/dist/img/dev_blog.png" alt="gMachina" class="img-circle center-block" width="200", height="200">
+            <h4>Development blog</h4>
+            </a>
+        </div>
+
+        <div class="project">
+            <a href="http://gmachina.net">
+            <img src="/dist/img/gmachina_game.png" alt="gMachina" class="img-circle center-block" width="200", height="200">
+            <h4>Our first game: gMachina</h4>
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <ul class="social-links list-inline">
+        <li><a class="social-link-item" href="mailto://hello@unmodded?subject=Hello"><i class="fa fa-envelope"></i> Press Inquiries</a></li>
+		<li><a class="social-link-item" href="http://twitter.com/unmodded"><i class="fa fa-twitter"></i> @unmodded</a></li>
+    </ul>
+
+</article>
+{% endfor %}
+</section>
