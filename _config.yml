@@ -1,13 +1,13 @@
 safe: True
-port: 4001
+port: 4002
 base-url:    /
 
 gems:
   - jekyll-sitemap
 
-source:      ./src/site
+source:      ./source/site
 destination: ./_gh_pages
-plugins:     ./src/site/_plugins
+plugins:     ./source/site/_plugins
 
 future:      true
 lsi:         false
@@ -18,6 +18,6 @@ rdiscount:
   extensions: []
 
 # Custom vars
-current_version:  0.1.2
-site: /
+current_version:  0.1.3
+site: https://unmodded.com
 blog: /blog/
